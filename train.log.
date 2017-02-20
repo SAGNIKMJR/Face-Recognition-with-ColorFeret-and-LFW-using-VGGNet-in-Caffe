@@ -1,0 +1,41 @@
+I0220 17:24:27.829866 17627 caffe.cpp:218] Using GPUs 0
+I0220 17:24:28.046551 17627 caffe.cpp:223] GPU 0: GeForce GTX 745
+I0220 17:24:29.354049 17627 solver.cpp:44] Initializing solver from parameters: 
+test_iter: 50
+test_interval: 1000
+base_lr: 0.01
+display: 20
+max_iter: 450000
+lr_policy: "step"
+gamma: 0.1
+momentum: 0.9
+weight_decay: 0.0005
+stepsize: 4000
+snapshot: 1000
+snapshot_prefix: "/home/abc-5/Desktop/DOP17_SK_SM/Run1_20_2/train_VGG19"
+solver_mode: GPU
+device_id: 0
+net: "/home/abc-5/Desktop/DOP17_SK_SM/Run1_20_2/VGG_ILSVRC_19_layers_train_val.prototxt"
+train_state {
+  level: 0
+  stage: ""
+}
+I0220 17:24:29.354463 17627 solver.cpp:87] Creating training net from net file: /home/abc-5/Desktop/DOP17_SK_SM/Run1_20_2/VGG_ILSVRC_19_layers_train_val.prototxt
+[libprotobuf ERROR google/protobuf/text_format.cc:274] Error parsing text-format caffe.NetParameter: 62:9: Expected ":", found "{".
+F0220 17:24:29.354785 17627 upgrade_proto.cpp:88] Check failed: ReadProtoFromTextFile(param_file, param) Failed to parse NetParameter file: /home/abc-5/Desktop/DOP17_SK_SM/Run1_20_2/VGG_ILSVRC_19_layers_train_val.prototxt
+*** Check failure stack trace: ***
+    @     0x7f8b690d85cd  google::LogMessage::Fail()
+    @     0x7f8b690da433  google::LogMessage::SendToLog()
+    @     0x7f8b690d815b  google::LogMessage::Flush()
+    @     0x7f8b690dae1e  google::LogMessageFatal::~LogMessageFatal()
+    @     0x7f8b696ff281  caffe::ReadNetParamsFromTextFileOrDie()
+    @     0x7f8b696e12fc  caffe::Solver<>::InitTrainNet()
+    @     0x7f8b696e2675  caffe::Solver<>::Init()
+    @     0x7f8b696e299f  caffe::Solver<>::Solver()
+    @     0x7f8b69754071  caffe::Creator_SGDSolver<>()
+    @           0x40ada8  train()
+    @           0x4075a8  main
+    @     0x7f8b6786f830  __libc_start_main
+    @           0x407e79  _start
+    @              (nil)  (unknown)
+Aborted (core dumped)
