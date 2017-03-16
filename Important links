@@ -3,3 +3,6 @@ https://github.com/NVIDIA/DIGITS/issues/190
 
 # LINK FOR BASH SCRIPT TO PARSE LOG AND EXTRACT TRAINING LOSS AND TEST LOSS
 https://github.com/BVLC/caffe/pull/89/commits/6111caab6f12237581eeaa1fad39003e32315aa1 
+
+# LINK FOR PULLING WEIGHTS FROM CAFFEMODEL
+https://groups.google.com/forum/#!msg/caffe-users/b0iQmmI81SU/7FAleRBxBQAJ
