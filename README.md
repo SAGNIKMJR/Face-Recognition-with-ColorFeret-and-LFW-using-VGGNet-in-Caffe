@@ -1,5 +1,5 @@
 # Face Recognition with ColorFeret and LFW Datasets using different VGG architectures and Transfer Learning/Finetuning
-This repository is very disorganized and of a very old project that I and one other student collaborator worked on 2 years back without both of us having proper knowledge of
+This repository is very disorganized as you can probably guess from the existence of 14 different branches and of a very old project that I and one other student collaborator worked on 2 years back without both of us having proper knowledge of
 **Git**
 . You can look through all the branches but I admit that it's super messy now with alls sorts of 
 ***protobuf***
